@@ -1,0 +1,355 @@
+@media (min-width: 2560px) {
+    
+    body {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    .portfolio-list li .title a {
+        font-size: 22px;
+    }
+    
+    .portfolio-list li .title .caption {
+        font-size: 18px;
+    }
+
+    .contact-form form input::placeholder,
+    .contact-form form textarea::placeholder {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    
+    .nav-toggle {
+        display: inline-block;
+    }
+
+    .nav .nav-list {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(52, 51, 53, 0.6);
+        height: 100%;
+        width: 200px;
+        padding: 6%;
+    }
+
+    #nav-toggle:checked ~ .nav-list {
+        display: flex;
+    }
+
+    .nav .nav-list li:not(:last-child) {
+        margin-right: 0px;
+        margin-bottom: 25px;
+    }
+
+    .portfolio-list li {
+        margin: 35px;
+        width: calc(50% - 70px);
+    }
+
+    .team-list .photo-person {
+        width: 180px;
+        height: 180px;
+    }
+
+    .footer-top .partner img {
+        width: 140px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    h3 {
+        font-size: 35px;
+    }
+
+    h4 {
+        margin-bottom: 50px;
+    }
+
+    .promo h4 {
+        font-size: 25px;
+    }
+
+    .promo h3 {
+        font-size: 40px;
+    }
+
+    .services,
+    .about-us,
+    .our-team {
+        padding: 80px 0;
+    }
+
+    .list-services {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .list-services-item:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .list-services-item {
+        width: 50%;
+    }
+
+    .list-services-item:last-child {
+        margin-top: 40px;
+        width: 50%;
+    }
+
+    .list-services-item:nth-child(1) {
+        margin-right: 20px;
+        width: calc(50% - 20px);
+    }
+
+    .list-services-item:nth-child(2) {
+        margin-left: 20px;
+        width: calc(50% - 20px);
+    }
+
+    .portfolio {
+        padding: 80px 0 50px 0;
+    }
+
+    .about-item-1,
+    .about-item-2 {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0;
+        margin-bottom: 60px;
+        width: 100%;
+    }
+
+    .about-item-1,
+    .about-item-2 {
+        border: 0;
+    }
+
+    .about-item-1 .photo {
+        margin: 0 0 20px 0;
+    }
+
+    .about-item-2 .photo {
+        margin: 0 0 20px 0;
+        order: 1;
+    }
+    
+    .about-item-1 .title p,
+    .about-item-1 .title h3,
+    .about-item-2 .title p,
+    .about-item-2 .title h3 {
+        text-align: center;
+    }
+
+    .team-list {
+        flex-wrap: wrap;
+    }
+
+    .team-item:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .team-item {
+        width: 50%;
+    }
+
+    .team-item:last-child {
+        margin-top: 40px;
+    }
+
+    .team-list .photo-person {
+        margin: 0 auto; 
+    }
+
+    .footer-top {
+        padding: 30px;
+    }
+
+    .footer-top img {
+       width: 120px;
+    }
+
+    .contact h4 {
+        color: #cbcbcb;
+        margin-bottom: 40px;
+    }
+
+    .contact-form form {
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .contact-form form .contact-form-left {
+        width: calc(100% - 20px);    
+    }
+
+    .contact-form form input {
+        margin: 15px 0 15px 0; 
+        padding: 10px;    
+    }
+    
+    .contact-form form textarea {
+        width: calc(96% - 20px);
+        margin: 15px 0 15px 0;   
+        padding: 10px 10px 45px 10px;
+    }
+    
+    .contact-form form input::placeholder,
+    .contact-form form textarea::placeholder {
+        font-size: 12px;
+    }
+
+    .footer-info {
+        width: 50%;
+    }
+
+    .footer-icon {
+        width: 50%;
+    }
+
+    .footer-icon .twitter,
+    .footer-icon .pinterist,
+    .footer-icon .facebook,
+    .footer-icon .google {
+        margin-right: 20px;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    .button-order,
+    button {
+    padding: 20px 25px;
+    } 
+
+    .promo {
+        height: 600px;
+        background-position: center;
+    }
+
+    .list-services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list-services-item:not(:first-child) {
+         margin-top: 40px;
+    }
+    
+    .list-services-item { 
+        min-width: 300px;
+    }
+
+    .list-services-item:nth-child(1) {
+        margin-right: 0;
+    }
+
+    .list-services-item:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .portfolio-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-list li {
+        margin: 0 0 30px 0;
+        width: 90%;
+    }
+    
+    .team-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-item {
+        width: 100%;
+    }
+
+    .team-item:not(:first-child) {
+        margin-top: 55px;
+    }
+    
+    .footer-top .wrapper {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer-top img:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .footer-top img:nth-child(3),
+    .footer-top img:nth-child(4) {
+        margin-top: 10px;
+    }
+
+    .contact-form form textarea {
+        width: calc(93% - 20px);
+    }
+    
+    .wrapper-footer-bot {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-icon {
+        margin-top: 20px;
+    }
+
+    .footer-icon .twitter,
+    .footer-icon .pinterist,
+    .footer-icon .facebook,
+    .footer-icon .google {
+        margin: 0 10px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    h3 {
+        font-size: 30px;
+    }
+
+    .promo h3 {
+        font-size: 35px;
+    }
+
+    .services,
+    .about-us,
+    .our-team {
+        padding: 60px 0;
+    }
+
+
+    .list-services-item {
+        min-width: 200px;
+    }
+
+    .portfolio {
+        padding: 60px 0 20px 0;
+    }
+
+    .footer-top img {
+       width: 80px;
+    }
+
+    .contact-form form textarea {
+        width: calc(91% - 20px);
+    }
+
+}
